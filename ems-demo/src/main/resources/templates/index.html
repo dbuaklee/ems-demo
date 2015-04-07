@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BMA-EMS ERAWAN - DEMO</title>
+
+   <!-- Bootstrap CSS  -->
+	<link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+      	th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+      	rel="stylesheet" media="screen" />
+      
+     
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" th:href="@{webjars/metisMenu/1.1.3/metisMenu.min.css}" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../dist/css/timeline.css" th:href="@{/static/css/timeline.css}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" th:href="@{/static/css/sb-admin-2.css}" rel="stylesheet">
+     <link href="../dist/css/main.css" th:href="@{/static/css/main.css}" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../bower_components/morrisjs/morris.css" th:href="@{webjars/morrisjs/0.5.1/morris.css}" rel="stylesheet">
+
+    <!-- Font Awesome  -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+		th:href="@{/webjars/font-awesome/4.3.0/css/font-awesome.min.css}" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" th:href="@{/}">BMA-EMS ERAWAN - DEMO</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 2</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 3</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 4</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li >
+                            <a href="#">ระบบขึ้นทะเบียนผู้ปฏิบัติการ/ยานพาหนะ<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="#">ขึ้นทะเบียนผู้ปฏิบัติการ</a></li>
+                                <li><a href="#">ขึ้นทะเบียนยานพาหนะ</a></li>
+                                <li><a href="#">ขึ้นทะเบียนหน่วยปฏิบัติการ</a></li>
+                                <li><a href="#">ขึ้นทะเบียนผู้เชี่ยวชาญ</a></li>
+                                <li><a href="#">จัดการข้อมูลบริษัทจำหน่ายยา/เวชภัณฑ์</a></li>
+                                <li><a href="#">ขึ้นทะเบียนอาสาสมัคร</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header">เกณฑ์การคัดแยกผู้ป่วย</h3>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <form role="form" id="formView">
+            	<div class="col-md-12">
+					<div class="form-group" id="basicSymtomp">
+					
+					</div>
+            	</div>
+            	<div class="col-md-12" id="step1"></div>
+            	<div class="col-md-12" id="step2"></div>
+            	<div class="col-md-12" id="step3"></div>
+            	<div class="col-md-12" id="step4"></div>
+            	<div class="col-md-12" id="step5"></div>
+            	<div class="col-md-12" id="step6"></div>
+            	<div class="col-md-12" id="step7"></div>
+            	<div class="col-md-12" id="step8"></div>
+            	<div class="col-md-12" id="step9"></div>
+            	</form>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+	<!-- Handlebars template -->
+	
+	<script  id="basicSymtopTemplate" type="text/x-handlebars-template">
+		<label>ระบุอาการเบื้องต้น</label>
+		<input class="form-control" id="basicSymTxt" type="text"></input>
+	</script>
+	
+	<script  id="step1Template" type="text/x-handlebars-template">
+		<div class="form-group">
+			<label>ความรู้สึกตัวของผู้ป่วย</label>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios1" type="radio" value="option1" name="optionsRadiosStep1">ไม่รู้สึกตัว
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option2" name="optionsRadiosStep1">รู้สึกตัว
+				</label>
+			</div>
+		</div>
+	</script>
+	
+	<script  id="step2Template" type="text/x-handlebars-template">
+		<div class="form-group">
+			<label>ตบไหล่และปลุกเรียก</label>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios1" type="radio" value="option1" name="optionsRadiosStep2">ยังคงไม่รู้สึกตัว
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option2" name="optionsRadiosStep2">พอรู้สึกตัว
+				</label>
+			</div>
+		</div>
+	</script>
+	<script  id="step3Template" type="text/x-handlebars-template">
+		<div class="form-group">
+			<label>ลักษณะการหายใจ</label>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios1" type="radio" value="option1" name="optionsRadiosStep3">พูดได้แค่ประโยคสั้นๆ/ติดขัด
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option2" name="optionsRadiosStep3">ซี่โครงบาน/จมูกบาน/ไหปลาร้ายุบ
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option3" name="optionsRadiosStep3">หายใจมีเสียงดัง
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option4" name="optionsRadiosStep3">ต้องลุกขึ้นนั่ง/ยืนเพื่อให้หายใจได้ดีขึ้น
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option5" name="optionsRadiosStep3">ตัวซีดและเหงื่อท่วมตัว
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option6" name="optionsRadiosStep3">หายใจเร็ว
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option7" name="optionsRadiosStep3">หายใจ/พูดได้ปกติ
+				</label>
+			</div>
+		</div>
+	</script>
+	<script  id="step4Template" type="text/x-handlebars-template">
+		<div class="form-group">
+			<label>ผู้ป่วยมีโรคหอบหืดหรือไม่</label>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios1" type="radio" value="option1" name="optionsRadiosStep4">มี
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option2" name="optionsRadiosStep4">ไม่มี
+				</label>
+			</div>
+		</div>
+	</script>
+	<script  id="step5Template" type="text/x-handlebars-template">
+		<div class="form-group">
+			<label>ผู้ป่วยอายุเท่าไร</label>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios1" type="radio" value="option1" name="optionsRadiosStep5">มากกว่า 20 ปี
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input id="optionsRadios2" type="radio" value="option2" name="optionsRadiosStep5">น้อยกว่า 20 ปี
+				</label>
+			</div>
+		</div>
+	</script>
+
+<script  id="resultTemplate" type="text/x-handlebars-template">
+	<span style="color:{{color}}"><i class="fa fa-flag"></i> {{code}}</span>
+</script>
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js" th:src="@{webjars/jquery/2.1.3/jquery.min.js}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+  	<script src="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/js/bootstrap.js"
+        th:src="@{/webjars/bootstrap/3.3.4/js/bootstrap.js}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js" th:src="@{webjars/metisMenu/1.1.3/metisMenu.min.js}"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../bower_components/raphael/raphael-min.js"  th:src="@{webjars/raphaeljs/2.1.2/raphael-min.js}"></script>
+    <script src="../bower_components/morrisjs/morris.min.js" th:src="@{webjars/morrisjs/0.5.1/morris.min.js}"></script>
+
+	<!-- twitter bootstrap typeahead -->
+	<script th:src="@{webjars/typeaheadjs/0.10.5-1/typeahead.bundle.min.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/webjars/underscorejs/1.6.0/underscore-min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/backbonejs/1.1.2/backbone-min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/handlebars/3.0.0-1/handlebars.min.js}"></script>
+	
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js" th:src="@{/static/js/sb-admin-2.js}"></script>
+
+ 	<script src="../dist/js/index.js" th:src="@{/static/js/index.js}"></script>
+ 	<script type="text/javascript">
+ 	var formView = new FormView({el: "#formView"});
+
+ 	$(document).ready(function() {
+ 		formView.render();
+ 	});	
+ 	
+ 	
+ 	</script>
+</body>
+
+</html>
